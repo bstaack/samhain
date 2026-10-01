@@ -36,6 +36,6 @@ Anything still being written shows "Content to come." Search `index.html` for `c
 
 1. Push this folder to a repo (with `index.html` at the root).
 2. Repo **Settings → Pages** → Source: *Deploy from a branch* → `main` / `root`.
-3. After a minute it's live at `https://<username>.github.io/<repo-name>/`.
+3. After a minute it's live at https://bstaack.github.io/samhain/
 
 Keep a downloaded copy on the presenting computer as a backup. Double-clicking `index.html` works without wifi.
