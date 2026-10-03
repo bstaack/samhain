@@ -28,7 +28,7 @@ To put a photo on any other slide, add this inside that slide's `<section>`:
 </figure>
 ```
 
-For a slide that is only a photo, use `class="photo solo"` so it fills the slide. To credit a photo, add `<figcaption class="credit">Credit line</figcaption>` before the `missing-note` line.
+For a full-height photo, on a slide by itself or beside text, use `class="photo solo"`. To credit a photo, add `<figcaption class="credit">Credit line</figcaption>` before the `missing-note` line.
 
 ## Unfinished sections
 
