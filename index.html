@@ -57,6 +57,14 @@ ol.count li+li{margin-top:18px}
 ol.count li::before{content:counter(n);font-family:var(--wood);color:var(--gold);font-size:.9em}
 ol.count+p,ul.patch+p{margin-top:30px}
 
+/* Contents for a run of slides: six patches with stitched seams */
+ol.contents{list-style:none;counter-reset:n;display:grid;grid-template-columns:repeat(3,1fr);margin-top:20px}
+ol.contents li{counter-increment:n;font-size:40px;line-height:1.2;padding:34px 40px 38px;border-top:2px dashed rgba(234,223,198,.3);border-left:2px dashed rgba(234,223,198,.3)}
+ol.contents li:nth-child(3n+1){border-left:0;padding-left:0}
+ol.contents li:nth-child(-n+3){border-top:0;padding-top:10px}
+ol.contents li:nth-last-child(-n+3){padding-bottom:14px}
+ol.contents li::before{content:counter(n);display:block;font-family:var(--wood);color:var(--gold);font-size:72px;line-height:1;margin-bottom:16px}
+
 /* Sources */
 .sources{columns:2;column-gap:72px}
 .sources li{font-size:30px;line-height:1.35;break-inside:avoid}
@@ -475,14 +483,14 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
 
   <section class="slide">
     <h2>Divination</h2>
-    <ul class="patch">
+    <ol class="contents">
       <li>Water bowl scrying</li>
       <li>Tea leaf readings</li>
       <li>Playing cards</li>
       <li>Throwing bones</li>
       <li>Bobbing for apples</li>
       <li>Flame and smoke</li>
-    </ul>
+    </ol>
   </section>
 
   <section class="slide">
