@@ -126,6 +126,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
 /* Photos: drop a file in /images with the matching name and it shows up */
 .photo{position:relative;margin:0;height:600px;display:flex;flex-direction:column;align-items:center;justify-content:center}
 .photo.solo{height:100%}
+.slide:has(> .photo.solo){padding-top:32px;padding-bottom:32px}
 .photo img{max-width:100%;max-height:100%;display:block;border:12px solid var(--tallow);box-shadow:0 22px 34px rgba(5,7,14,.5);transform:rotate(-1deg)}
 .photo:has(.credit) img{max-height:calc(100% - 64px)}
 .photo .credit{margin-top:26px;font-style:italic;font-size:24px;line-height:1.3;color:var(--dim);text-align:center}
@@ -193,7 +194,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
 
   <section class="slide">
     <figure class="photo solo">
-      <img src="images/wheel-of-the-year.jpg" alt="The Wheel of the Year">
+      <img src="images/wheel-of-the-year.jpg" alt="The Wheel of the Year, marking Samhain, Yule, Imbolc, Ostara, Beltane, Litha, Lughnasadh, and Mabon">
       <figcaption class="missing-note">Wheel of the Year photo goes here<span>images/wheel-of-the-year.jpg</span></figcaption>
     </figure>
   </section>
@@ -360,13 +361,13 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
   </section>
 
   <section class="slide">
-    <div class="split">
+    <div class="split" style="grid-template-columns:1fr 800px">
       <div>
         <h2>The fire festival</h2>
         <p>The Celts celebrated a special fire ritual on the first frost after the first full moon in October.</p>
       </div>
       <figure class="photo">
-        <img src="images/fire-festival.jpg" alt="The fire festival">
+        <img src="images/fire-festival.jpg" alt="A fire dancer in a horned skull mask holding a wheel of flaming torches">
         <figcaption class="missing-note">Fire festival photo goes here<span>images/fire-festival.jpg</span></figcaption>
       </figure>
     </div>
@@ -429,7 +430,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
 
   <section class="slide">
     <figure class="photo solo">
-      <img src="images/silent-supper.jpg" alt="A silent supper table">
+      <img src="images/silent-supper.jpg" alt="A silent supper table set with candles, a plate of food, and photos of ancestors">
       <figcaption class="missing-note">Silent supper photo goes here<span>images/silent-supper.jpg</span></figcaption>
     </figure>
   </section>
@@ -487,7 +488,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
         <p>Different shapes mean different things.</p>
       </div>
       <figure class="photo">
-        <img src="images/tea-leaves.jpg" alt="Tea leaves in a cup">
+        <img src="images/tea-leaves.jpg" alt="Tea leaves left in an empty cup">
         <figcaption class="missing-note">Tea leaf photo goes here<span>images/tea-leaves.jpg</span></figcaption>
       </figure>
     </div>
@@ -502,7 +503,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
 
   <section class="slide">
     <figure class="photo solo">
-      <img src="images/playing-cards.jpg" alt="Playing cards laid out for a reading">
+      <img src="images/playing-cards.jpg" alt="A chart of playing card meanings by suit and number">
       <figcaption class="missing-note">Playing cards photo goes here<span>images/playing-cards.jpg</span></figcaption>
     </figure>
   </section>
@@ -515,7 +516,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
         <p>It is the art of literally “throwing” bones to divine the past, present, and future.</p>
       </div>
       <figure class="photo">
-        <img src="images/throwing-bones.jpg" alt="Bones and charms for a reading">
+        <img src="images/throwing-bones.jpg" alt="A diagram of seven numbered bones used in a bone reading">
         <figcaption class="missing-note">Throwing bones photo goes here<span>images/throwing-bones.jpg</span></figcaption>
       </figure>
     </div>
@@ -536,7 +537,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
         <p>Focusing on a candle flame or a fire, ask the Spirits to show you images in the flame or smoke.</p>
       </div>
       <figure class="photo">
-        <img src="images/flame-and-smoke.jpg" alt="Candle flame and smoke">
+        <img src="images/flame-and-smoke.jpg" alt="A fire burning at night">
         <figcaption class="missing-note">Flame and smoke photo goes here<span>images/flame-and-smoke.jpg</span></figcaption>
       </figure>
     </div>
@@ -553,7 +554,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
   </section>
 
   <section class="slide">
-    <div class="split">
+    <div class="split" style="grid-template-columns:1fr 700px">
       <div>
         <h2>Apple head poppets</h2>
         <p>The best apples for this are:</p>
@@ -566,7 +567,7 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
         </ul>
       </div>
       <figure class="photo">
-        <img src="images/apple-head-poppets.jpg" alt="Apple head poppets">
+        <img src="images/apple-head-poppets.jpg" alt="Four dried apple heads carved with faces">
         <figcaption class="missing-note">Apple head poppets photo goes here<span>images/apple-head-poppets.jpg</span></figcaption>
       </figure>
     </div>
