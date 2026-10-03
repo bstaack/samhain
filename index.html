@@ -133,6 +133,11 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
 .photo.missing .credit{display:none}
 .photo .missing-note{display:none}
 .photo.missing{border:2px dashed rgba(179,169,143,.55);width:100%}
+.photo-row{display:flex;justify-content:center;align-items:center;gap:24px}
+.photo-row .photo{height:auto;flex:none}
+.photo-row .photo img{height:368px;width:auto;max-width:none;max-height:none}
+.photo-row .photo:nth-child(even) img{transform:rotate(1.2deg)}
+.photo-row .photo.missing{width:240px;height:368px}
 .photo.missing img{display:none}
 .photo.missing .missing-note{display:block;text-align:center;font-style:italic;color:var(--dim);font-size:32px;line-height:1.5}
 .photo.missing .missing-note span{display:block;font-style:normal;font-size:22px;opacity:.75}
@@ -447,11 +452,25 @@ blockquote::before{content:"\201C"}blockquote::after{content:"\201D"}
   </section>
 
   <section class="slide">
-    <h2>Tipton-Haynes</h2>
-    <figure class="photo">
-      <img src="images/tipton-haynes.jpg" alt="Tipton-Haynes">
-      <figcaption class="missing-note">Tipton-Haynes photo goes here<span>images/tipton-haynes.jpg</span></figcaption>
-    </figure>
+    <h2>Local haunts</h2>
+    <div class="photo-row">
+      <figure class="photo">
+        <img src="images/tipton-haynes.jpg" alt="A building at Tipton-Haynes, lit up at night">
+        <figcaption class="missing-note">Photo goes here<span>images/tipton-haynes.jpg</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/tunnel.jpg" alt="A graffiti-covered tunnel in the woods">
+        <figcaption class="missing-note">Photo goes here<span>images/tunnel.jpg</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/gravestone.jpg" alt="A weathered obelisk gravestone">
+        <figcaption class="missing-note">Photo goes here<span>images/gravestone.jpg</span></figcaption>
+      </figure>
+      <figure class="photo">
+        <img src="images/gravestone-inscription.jpg" alt="Gravestone inscription: Remember me as you pass by, as you are now so once was I, as I am now you soon shall be, prepare for death and follow me.">
+        <figcaption class="missing-note">Photo goes here<span>images/gravestone-inscription.jpg</span></figcaption>
+      </figure>
+    </div>
   </section>
 
   <section class="slide">

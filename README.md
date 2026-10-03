@@ -17,7 +17,7 @@ The slide number is kept in the address bar (`#12`), so refreshing keeps your pl
 
 ## Adding photos
 
-The Tipton-Haynes slide already looks for `images/tipton-haynes.jpg`. Drop the photo in with that exact name and it shows up. Until then the slide shows a dashed placeholder.
+Each photo on a slide points to a file in `images/`. If that file is missing, the slide shows a dashed placeholder with the file name it expects, so replacing a photo is just a matter of saving the new one under the same name.
 
 To put a photo on any other slide, add this inside that slide's `<section>`:
 
